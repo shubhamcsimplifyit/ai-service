@@ -1,0 +1,108 @@
+
+BUILD_NUMBER=#[Build.BuildNumber]#
+
+logging.level.=#{logging.level.}#
+#Transaction DB name
+txn.database-name=#{txn.database-name}#
+
+#Transaction JDBC URL
+spring.datasource.txn.jdbc-url=#{spring.datasource.txn.jdbc-url}#
+
+#Transaction Data source user name
+spring.datasource.txn.username=#{spring.datasource.txn.username}#
+
+#Transaction Data source password
+spring.datasource.txn.password=#{spring.datasource.txn.password}#
+
+#Transaction driver class name
+spring.datasource.txn.driver-class-name=#{spring.datasource.txn.driver-class-name}#
+
+#Master DB name
+mst.database-name=#{mst.database-name}#
+
+#Master JDBC URL
+spring.datasource.mst.jdbc-url=#{spring.datasource.mst.jdbc-url}#
+
+#Master Data source user name
+spring.datasource.mst.username=#{spring.datasource.mst.username}#
+
+#Master Data source password
+spring.datasource.mst.password=#{spring.datasource.mst.password}#
+
+#Master driver class name
+spring.datasource.mst.driver-class-name=#{spring.datasource.mst.driver-class-name}#
+ 
+#Archive DB name
+arch.database-name=#{arch.database-name}#
+
+#Archive JDBC URL
+spring.datasource.arch.jdbc-url=#{spring.datasource.arch.jdbc-url}#
+
+#Archive Data source user na.me
+spring.datasource.arch.username=#{spring.datasource.arch.username}#
+
+#Archive Data source password
+spring.datasource.arch.password=#{spring.datasource.arch.password}#
+
+#Archive driver class name
+spring.datasource.arch.driver-class-name=#{spring.datasource.arch.driver-class-name}#
+ 
+#controls the maximum number of milliseconds that a user will wait for a connection from the pool.
+spring.datasource.hikari.connectionTimeout=#{spring.datasource.hikari.connectionTimeout}#
+
+#Maximum amount of time that a connection is allowed to sit idle in the pool
+spring.datasource.hikari.idleTimeout=#{spring.datasource.hikari.idleTimeout}#
+
+#Controls the maximum lifetime of a connection in the pool (30 mins)
+spring.datasource.hikari.maxLifetime=#{spring.datasource.hikari.maxLifetime}#
+
+#Controls the maximum size that the pool is allowed to reach, including both idle and in-use connections
+spring.datasource.hikari.maximum-pool-size=#{spring.datasource.hikari.maximum-pool-size}#
+
+#controls the minimum number of idle connections that HikariCP tries to maintain in the pool
+spring.datasource.hikari.minimumIdle=#{spring.datasource.hikari.minimumIdle}#
+
+#cache config file path
+#spring.cache.jcache.config=#{spring.cache.jcache.config}#
+
+#Max file size to upload file
+spring.servlet.multipart.max-file-size=#{spring.servlet.multipart.max-file-size}#
+
+#Max request size to upload file
+spring.servlet.multipart.max-request-size=#{spring.servlet.multipart.max-request-size}# 
+
+#Thread pool config
+async.core.pool.size=#{async.core.pool.size}#
+async.max.pool.size=#{async.max.pool.size}#
+async.thread.queue.capacity=#{async.thread.queue.capacity}#
+
+#Off spring banner
+spring.main.banner-mode=#{spring.main.banner-mode}#
+
+#JDBC template fetch max rows
+spring.jdbc.template.max-rows=#{spring.jdbc.template.max-rows}#
+
+##Server Compression Start
+# Whether response compression is enabled.
+server.compression.enabled=#{server.compression.enabled}#
+
+# List of user-agents to exclude from compression.
+server.compression.excluded-user-agents=#{server.compression.excluded-user-agents}#
+
+# Comma-separated list of MIME types that should be compressed. Default mime-types are: text/html, text/xml, text/plain, text/css
+server.compression.mime-types='#{server.compression.mime-types}#'
+
+# Minimum Content-Length value that is required for compression to be performed.
+server.compression.min-response-size=#{server.compression.min-response-size}#
+
+# Logging properties
+logging.file.path=#{logging.file.path}#
+logging.file.name=#{logging.file.name}#
+logging.logback.rollingpolicy.max-file-size=#{logging.logback.rollingpolicy.max-file-size}#
+logging.pattern.console=#{logging.pattern.console}#
+logging.pattern.file= #{logging.pattern.file}#
+
+temp.folder.path=#{temp.folder.path}#
+
+
+
